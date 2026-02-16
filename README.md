@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Vinicius Miguel — Portfólio
 
-# Run and deploy your AI Studio app
+Este projeto é um site de portfólio feito para apresentar a trajetória profissional do Vinicius Miguel, com seções de projetos, habilidades, experiência e contato.
 
-This contains everything you need to run your app locally.
+## Objetivo principal do projeto
 
-View your app in AI Studio: https://ai.studio/apps/drive/1RdNNgN1NgFBuOrkCJBRKgo2MP4rnAToa
+Centralizar as informações profissionais (projetos, habilidades e experiência) em uma página única.
 
-## Run Locally
+## Tecnologias utilizadas
 
-**Prerequisites:**  Node.js
+- **React**: estrutura a interface em componentes.
+- **TypeScript**: adiciona tipagem ao código e melhora a manutenção.
+- **Vite**: ambiente de desenvolvimento e build do projeto.
+- **Tailwind CSS (via CDN)**: estilização usando classes utilitárias no HTML/JSX.
+- **Lucide React**: biblioteca de ícones usada na interface.
 
+## Como executar o projeto
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1) Instale as dependências:
+
+```bash
+npm install
+```
+
+2) Rode o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Abra `http://localhost:3000`.
+
+3) (Opcional) Gere o build e rode uma prévia:
+
+```bash
+npm run build
+npm run preview
+```

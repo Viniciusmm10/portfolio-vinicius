@@ -24,12 +24,12 @@ export const Contact: React.FC = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-6 relative z-10">
-              Pronto para integrar sua equipe?
+              Vamos conversar?
             </h2>
             
             <p className="text-slate-400 mb-10 max-w-lg mx-auto relative z-10 text-lg leading-relaxed">
-              Estou disponível para atuar em projetos de <strong>Frontend (React)</strong> ou <strong>Backend (Node.js)</strong>. 
-              Entre em contato para agendarmos uma conversa técnica.
+              Estou aberto a oportunidades em <strong>e-commerce</strong> e <strong>automação</strong>, com foco em <strong>integrações</strong> e <strong>ferramentas web</strong>.
+              Entre em contato para alinharmos contexto, escopo e próximos passos.
             </p>
 
             {/* Primary Action: Email */}
@@ -88,7 +88,7 @@ export const Contact: React.FC = () => {
 
           {/* Footer */}
           <div className="text-center mt-16 text-slate-600 text-sm">
-            <p>© {new Date().getFullYear()} Vinicius Miguel. Code is Poetry.</p>
+            <p>© {new Date().getFullYear()} Vinicius Miguel. E-commerce & automação.</p>
           </div>
           
         </div>

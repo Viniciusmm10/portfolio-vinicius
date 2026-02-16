@@ -12,7 +12,7 @@ export const Experience: React.FC = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
             <User className="text-cyan-500" />
-            Sobre & Trajetória
+            Sobre & Experiência
           </h2>
           
           <div className="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 backdrop-blur-sm max-w-4xl">
@@ -26,7 +26,7 @@ export const Experience: React.FC = () => {
         <div>
           <h3 className="text-xl font-bold text-slate-100 mb-10 flex items-center gap-2">
             <Briefcase size={20} className="text-slate-400" />
-            Histórico Profissional
+            Experiência Profissional
           </h3>
 
           <div className="space-y-12 relative max-w-4xl ml-2 md:ml-4">

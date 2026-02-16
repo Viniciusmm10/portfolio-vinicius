@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Mail, Github, Linkedin, Terminal, Palette } from 'lucide-react';
+import { ArrowRight, Mail, Github, Linkedin } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../constants';
 import { SectionId } from '../types';
 
@@ -23,19 +23,19 @@ export const Hero: React.FC = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
             </span>
             <span className="text-slate-300 font-medium text-xs tracking-wide uppercase">
-              Vinicius Miguel
+              {PORTFOLIO_DATA.name}
             </span>
           </div>
           
           {/* Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-100 mb-8 tracking-tight leading-[1.1]">
-            Software Developer focado em <br className="hidden md:block" />
+            E-commerce Tech focado em <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               interfaces web
             </span>{" "}
             e{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              APIs escaláveis
+              automação operacional
             </span>
           </h1>
           
@@ -48,27 +48,18 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button 
               onClick={() => document.getElementById(SectionId.PROJECTS)?.scrollIntoView({ behavior: 'smooth'})}
-              className="px-8 py-4 bg-slate-100 hover:bg-white text-slate-900 rounded-xl font-semibold transition-all hover:scale-[1.02] flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-white/5"
+              className="px-8 py-4 bg-slate-100 hover:bg-white text-slate-900 rounded-xl font-semibold transition-all hover:scale-[1.02] flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-white/5 order-1"
             >
               Ver Projetos
               <ArrowRight size={18} />
             </button>
             <button 
               onClick={() => document.getElementById(SectionId.CONTACT)?.scrollIntoView({ behavior: 'smooth'})}
-              className="px-8 py-4 bg-slate-800/50 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-600 rounded-xl font-semibold transition-all hover:scale-[1.02] flex items-center gap-2 w-full sm:w-auto justify-center backdrop-blur-sm"
+              className="px-8 py-4 bg-slate-800/50 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-600 rounded-xl font-semibold transition-all hover:scale-[1.02] flex items-center gap-2 w-full sm:w-auto justify-center backdrop-blur-sm order-2"
             >
               Entrar em Contato
               <Mail size={18} />
             </button>
-            <a 
-              href={PORTFOLIO_DATA.social.creative}
-              target="_blank"
-              rel="noreferrer"
-              className="px-8 py-4 bg-transparent hover:bg-slate-800/30 text-cyan-400 border border-cyan-500/30 hover:border-cyan-400 rounded-xl font-semibold transition-all hover:scale-[1.02] flex items-center gap-2 w-full sm:w-auto justify-center backdrop-blur-sm group"
-            >
-              Portfólio Criativo
-              <Palette size={18} className="group-hover:rotate-12 transition-transform" />
-            </a>
           </div>
 
           {/* Social Proof / Links */}
